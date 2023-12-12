@@ -29,7 +29,7 @@ class NavBarSimple extends React.Component {
                     <button onClick={() => this.handleclick()}>{this.state.buttonText}</button>
                 </div>
             </div>
-        )
+        );
     }
 }
 
