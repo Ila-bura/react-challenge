@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import css from "./css/NavBarForm.module.css";
+import NavBarChild from "./NavBarChild";
 
 class NavBarForm extends React.Component {
 
@@ -22,7 +23,7 @@ class NavBarForm extends React.Component {
             <div className= {css.NavBar}>
                 <h1>My Gallery</h1>
 
-                    {
+                      {/*{
                     this.state.isLoggedIn ? 
                         <button onClick={() => this.handleButtonClick()}>Login</button>
                         : 
@@ -35,7 +36,12 @@ class NavBarForm extends React.Component {
                             <button onClick={() => this.handleButtonClick()}>Submit</button>
                         </form>
                         
-                    }
+                    }*/}
+
+                <NavBarChild
+                isLoggedIn={this.state.isLoggedIn}
+                handleClick={this.handleButtonClick}
+                />   
 
             </div>
         )
