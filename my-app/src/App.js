@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from "react";
 import css from "./App.module.css";
 // import NavBarSimple from "./components/NavBarSimple";
 import Sidebar from "./components/Sidebar";
