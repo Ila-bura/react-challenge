@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+
 import css from "./css/Content.module.css";
 import {savedPosts} from "../posts.json";
 import PostItem from "./PostItem";
@@ -25,7 +25,7 @@ export class Content extends Component {
     handleChange = (e) => {
         const name = e.target.value.toLowerCase();
         const filteredPosts = savedPosts.filter((post)=>{
-            return post.name.toLowerCase().includes(name);
+            return post.nimport React, { Component } from "react";ame.toLowerCase().includes(name);
         })
         
         this.setState({
